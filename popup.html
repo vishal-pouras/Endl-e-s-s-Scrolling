@@ -1,0 +1,31 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      div.ex1 {
+      width:300px;
+      margin: auto;
+      }
+      #ex2{
+      color: #3B5998; 
+      text-align: center;
+      }
+    </style>
+  </head>
+  <body background="bb.jpg">
+ 
+      <h1 style="color: #ffffff;font-family:Montserrat;text-align: center;">This extension prevents you from wasting your precious time on FACEBOOK.</h1>
+      <h1 id="ex2">End<strike style="">less</strike> Scrolling</h1>
+      <div class="ex1">
+          <h2 style="color: #ffffff;font-family:Ubuntu;text-align: center;">"Time is what we want MOST but what we use WORST!"</h2>
+      </div>
+      
+  <script type="text/javascript" src="myScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "End Scrolling",
+  "description": "This extension is for those who are addicted to endless scrolling on facebook.They don't realize the precious time wasted.This extension provides a way out!",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "rsz_1logo.png",
+    "default_popup": "popup.html"
+  },
+  "icons" : {
+    "64" : "rsz_2logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["myScript.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "background":{
+    "scripts": ["background.js"]
+  }
+}
